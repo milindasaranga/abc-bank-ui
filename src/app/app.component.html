@@ -1,0 +1,11 @@
+<mat-toolbar class="app-header">
+  <div><a [routerLink]="['/']" class="abcbank">aBC Bank</a></div>
+  <span class="nav-tool-items" *ngIf="!currentUser">
+    <a mat-button routerLink="login" class="login-h" routerLinkActive="active">Log In</a>
+  </span>
+  <span class="nav-tool-items" *ngIf="currentUser">
+    <a mat-button class="login-h" routerLinkActive="active" (click)="logout()">Logout</a>
+  </span>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
