@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { AuthenticationService } from '../services/authentication.service';
 import { Router } from '@angular/router';
-import { AppComponent } from '../app.component';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
@@ -21,7 +20,6 @@ export class LoginComponent implements OnInit {
   constructor(
     private auth: AuthenticationService,
     private router: Router,
-    private app: AppComponent,
     private formBuilder: FormBuilder,
     private toastr: ToastrService
   ) {

@@ -12,9 +12,9 @@ export class UserService {
 
   constructor(private http:HttpClient, private auth:AuthenticationService) { }
 
-//   register(user:User) {
-//     return this.http.post<any>('http://localhost:8080/users/add', user);
-//   }
+  register(user:User) {
+    return this.http.post<any>(ServiceUrls.HOST + ServiceUrls.USER_ADD_API, user);
+  }
 
   getUserData(){
     return this.http.get(ServiceUrls.HOST + ServiceUrls.USERS_API);

@@ -2,6 +2,9 @@
   <div><a [routerLink]="['/']" class="abcbank">aBC Bank</a></div>
   <span class="nav-tool-items" *ngIf="!currentUser">
     <a mat-button routerLink="login" class="login-h" routerLinkActive="active">Log In</a>
+  </span>  
+  <span class="nav-tool-items" *ngIf="currentUser">
+    <a mat-button class="login-h" routerLinkActive="active" [routerLink]="['/bankaccount']">Register</a>
   </span>
   <span class="nav-tool-items" *ngIf="currentUser">
     <a mat-button class="login-h" routerLinkActive="active" (click)="logout()">Logout</a>

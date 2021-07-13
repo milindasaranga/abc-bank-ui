@@ -9,16 +9,17 @@ export class User {
     status:string;
     balance:number;
     numOfChecks: number;
+    userType:string;
 
-    constructor(name: string,username:string, password:string, email:string, address:string, account:string) {
+    constructor(name: string,username:string, password:string, email:string, address:string, userType:string) {
         this.id = 0;
         this.name = name;
         this.username = username;
         this.password = password;
         this.email = email;
         this.address = address;
-        this.account = account;
-        this.status = "pending";
+        this.account = "checking";
+        this.status = "open";
         this.balance = 0.00;
         this.numOfChecks = 10;
     }

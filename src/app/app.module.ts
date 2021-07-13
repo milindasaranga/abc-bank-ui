@@ -15,13 +15,15 @@ import { AuthInterceptorService } from './services/auth-interceptor.service';
 import { AuthenticationService } from './services/authentication.service';
 import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
+import { BankAccountComponent } from './bank-account/bank-account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    MainComponent
+    MainComponent,
+    BankAccountComponent
   ],
   imports: [
     BrowserModule,

@@ -22,9 +22,7 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (this.currentUser && this.currentUser.account === 'admin' ) {
-      this.router.navigate(['/admin']);
-    } else if (this.currentUser) {
+    if (this.currentUser) {
       this.router.navigate(['/home']);
     } else {
       this.router.navigate(['/login']);

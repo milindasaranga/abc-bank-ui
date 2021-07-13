@@ -4,5 +4,5 @@ export class ServiceUrls{
     
     public static AUTH_API = "login/authenticate";
     public static USERS_API = "user";
-   // public static USER_API = "";
+    public static USER_ADD_API = "user/add";
 }
